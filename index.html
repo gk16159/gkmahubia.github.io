@@ -4,68 +4,161 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gulshan Kumar | Computational Mineral Physics</title>
+<meta name="description" content="Academic homepage of Gulshan Kumar, PhD Scholar at IIT Gandhinagar working in Computational Mineral Physics and High Pressure Geoscience.">
+
+<link rel="preload" as="image" href="profile.webp">
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family:Arial, sans-serif;
-    margin:0;
-    background:#f1f5f9;
+    background:#eef2f7;
     color:#1e293b;
     line-height:1.7;
 }
+
 header{
     display:flex;
     flex-wrap:wrap;
-    align-items:center;
     justify-content:center;
-    gap:50px;
-    padding:60px 20px;
+    align-items:center;
+    gap:40px;
+    padding:50px 20px;
     background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
 }
-img{
-    width:330px;
-    border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+header .intro{
+    flex:1;
+    min-width:300px;
+    max-width:700px;
 }
-.container{
-    max-width:1150px;
-    margin:auto;
-    padding:40px 20px;
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#0f172a;
 }
-.card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    margin:18px 0;
+
+header p{
+    margin-bottom:12px;
+    font-size:17px;
 }
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+
+.profile-pic{
+    width:220px;
+    height:260px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
+
 .profile-links a{
     text-decoration:none;
-    font-weight:bold;
     color:white;
-    padding:12px 18px;
-    margin:6px;
+    padding:11px 18px;
+    margin:6px 6px 0 0;
     display:inline-block;
-    border-radius:12px;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:14px;
+    transition:0.3s;
 }
+
+.profile-links a:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
+
 .scholar{background:#2563eb;}
 .researchgate{background:#16a34a;}
 .orcid{background:#15803d;}
 .linkedin{background:#0a66c2;}
-h1,h2{
-    margin-top:0;
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:35px 20px;
 }
+
+h2{
+    margin:30px 0 12px;
+    color:#0f172a;
+    border-left:5px solid #2563eb;
+    padding-left:10px;
+}
+
+.card{
+    background:white;
+    padding:24px;
+    border-radius:16px;
+    margin:15px 0;
+    box-shadow:0 4px 12px rgba(0,0,0,0.07);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.pub-card{
+    background:white;
+    padding:22px;
+    border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.07);
+    transition:0.3s;
+}
+
+.pub-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.10);
+}
+
+.pub-card a{
+    text-decoration:none;
+    color:#1d4ed8;
+    font-weight:bold;
+    font-size:17px;
+}
+
+.pub-card a:hover{
+    text-decoration:underline;
+}
+
+.read-btn{
+    margin-top:12px;
+    display:inline-block;
+    background:#2563eb;
+    color:white !important;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:13px;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#64748b;
+    font-size:14px;
+}
+
 ul{
-    padding-left:20px;
+    padding-left:22px;
 }
-@media(max-width:700px){
+
+@media(max-width:750px){
     .grid{
         grid-template-columns:1fr;
+    }
+    header h1{
+        font-size:32px;
     }
 }
 </style>
@@ -74,7 +167,7 @@ ul{
 <body>
 
 <header>
-    <div>
+    <div class="intro">
         <h1>Gulshan Kumar</h1>
         <p><b>Earth Science Department, IIT Gandhinagar</b></p>
         <p><b>Computational Mineral Physics • High Pressure Geoscience</b></p>
@@ -83,15 +176,15 @@ ul{
         </p>
 
         <div class="profile-links">
-            <a class="scholar" href="https://scholar.google.com/citations?user=tNZsO5kAAAAJ&hl=en">Google Scholar</a>
-            <a class="researchgate" href="https://www.researchgate.net/profile/Gulshan-Kumar-19?ev=hdr_xprf">ResearchGate</a>
-            <a class="orcid" href="https://orcid.org/0009-0004-8736-062X">ORCID</a>
-            <a class="linkedin" href="https://www.linkedin.com/in/gulshan-kumar-4840b1128/">LinkedIn</a>
+            <a class="scholar" href="https://scholar.google.com/citations?user=tNZsO5kAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a class="researchgate" href="https://www.researchgate.net/profile/Gulshan-Kumar-19?ev=hdr_xprf" target="_blank">ResearchGate</a>
+            <a class="orcid" href="https://orcid.org/0009-0004-8736-062X" target="_blank">ORCID</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/gulshan-kumar-4840b1128/" target="_blank">LinkedIn</a>
         </div>
     </div>
 
     <div>
-        <img src="Profile.jpg" alt="Gulshan Kumar">
+        <img src="profile.webp" alt="Gulshan Kumar" width="220" height="260" decoding="async" fetchpriority="high" class="profile-pic">
     </div>
 </header>
 
@@ -106,7 +199,7 @@ ul{
     <div class="card">
         <b>Junior Research Fellow (SERB), IIT Gandhinagar</b> (01/05/2024 – 19/01/2026)
         <ul>
-            <li>Investigating high-pressure phase transitions in GeO2 up to 120 GPa using Density Functional Theory (Quantum ESPRESSO).</li>
+            <li>Investigating high-pressure phase transitions in GeO₂ up to 120 GPa using Density Functional Theory.</li>
             <li>Computing elastic constants, phonon dispersion, and thermodynamic properties using Phonopy and quasi-harmonic approximation.</li>
             <li>Integrating first-principles simulations with Raman spectroscopy and powder X-ray diffraction measurements.</li>
         </ul>
@@ -119,92 +212,83 @@ ul{
         </ul>
     </div>
 
-    <h2>BS–MS Thesis</h2>
-    <div class="card">
-        <b>BS–MS Thesis, IISER Kolkata (2020–2021)</b>
-        <ul>
-            <li>Developed a flow-corrected resonance model explaining aeroacoustic overblowing.</li>
-            <li>Performed nonlinear spectral energy analysis and frequency scaling validation.</li>
-            <li>Single-author paper in Physics of Fluids (AIP).</li>
-        </ul>
-    </div>
-
-    <h2>Teaching & Training</h2>
-    <div class="card">
-        <ul>
-            <li>Teaching Assistant (TA), IISER Kolkata – Graduate-level course: Waves and Optics.</li>
-            <li>Hands-on Instrumentation Training, IIT Gandhinagar – Six months of experience in powder X-ray diffraction measurements and analysis.</li>
-        </ul>
-    </div>
-
-    <h2>Conferences & Presentations</h2>
-    <div class="card">
-        <ul>
-            <li>National Conference, Presidency University, Kolkata – Poster: DFT study of PbS, ZnS, and solid-solution stability.</li>
-            <li>National Conference, Wadia Institute of Himalayan Geology – Poster: High-temperature Raman spectroscopy of PbS.</li>
-        </ul>
-    </div>
-
     <h2>Technical Skills</h2>
     <div class="card">
-        <b>Programming Languages:</b> Python, MATLAB, LaTeX<br><br>
+        <b>Programming:</b> Python, MATLAB, LaTeX<br><br>
         <b>Computational Packages:</b> Quantum ESPRESSO, Phonopy, QHA, ElaStic, Mineral-CIJ, EOS-Fit, XtalOpt, Gibbs2, CP2K, OriginLab<br><br>
-        <b>Experimental & Analysis Tools:</b> Powder XRD, Raman Spectroscopy, Structure Visualization, Equation of State Analysis
+        <b>Experimental:</b> Powder XRD, Raman Spectroscopy, EOS Analysis
     </div>
 
     <h2>Selected Publications</h2>
     <div class="grid">
 
-        <div class="card">
-            High-pressure phase transition of olivine-type Mg2GeO4 to a metastable forsterite-III type structure and their equations of state<br>
+        <div class="pub-card">
+            <a href="https://www.degruyterbrill.com/document/doi/10.2138/am-2023-9208/html" target="_blank">
+            High-pressure phase transition of olivine-type Mg2GeO4 to a metastable forsterite-III type structure and their equations of state
+            </a><br><br>
             <b>RV Divya, G Kumar, RE Cohen, SJ Tracy, Y Meng, S Chariton, ...</b><br>
-            American Mineralogist 109 (12), 2052-2059 (2024)
+            American Mineralogist 109 (12), 2052-2059 (2024)<br>
+            <a class="read-btn" href="https://www.degruyterbrill.com/document/doi/10.2138/am-2023-9208/html" target="_blank">Read Paper ↗</a>
         </div>
 
-        <div class="card">
-            High-pressure elastic properties of GeO2 polymorphs up to 120 GPa<br>
+        <div class="pub-card">
+            <a href="https://meetingorganizer.copernicus.org/EGU26/EGU26-5107.html" target="_blank">
+            High-pressure elastic properties of GeO2 polymorphs up to 120 GPa
+            </a><br><br>
             <b>G Kumar, S Ghosh, SB Pillai, R Dutta</b><br>
-            EGU26 (2026)
+            EGU General Assembly 2026<br>
+            <a class="read-btn" href="https://meetingorganizer.copernicus.org/EGU26/EGU26-5107.html" target="_blank">View Abstract ↗</a>
         </div>
 
-        <div class="card">
-            Investigating the Kaps whistle tone at low-and high-flow rates of nitrogen gas<br>
+        <div class="pub-card">
+            <a href="https://pubs.aip.org/aip/pof/article/38/3/037126/3384751/Investigating-the-Kaps-whistle-tone-at-low-and" target="_blank">
+            Investigating the Kaps whistle tone at low- and high-flow rates of nitrogen gas
+            </a><br><br>
             <b>G Kumar</b><br>
-            Physics of Fluids 38 (3) (2026)
+            Physics of Fluids 38 (3) (2026)<br>
+            <a class="read-btn" href="https://pubs.aip.org/aip/pof/article/38/3/037126/3384751/Investigating-the-Kaps-whistle-tone-at-low-and" target="_blank">Read Paper ↗</a>
         </div>
 
-        <div class="card">
-            Equation of state of the rutile and CaCl2-type phases of GeO2 to 70 GPa<br>
+        <div class="pub-card">
+            <a href="https://pubs.aip.org/aip/jap/article/138/23/235902/3374825/Equation-of-state-of-the-rutile-and-CaC-l-2-type" target="_blank">
+            Equation of state of the rutile and CaCl2-type phases of GeO2 to 70 GPa
+            </a><br><br>
             <b>S Ghosh, G Kumar, S Babu Pillai, R Dutta</b><br>
-            Journal of Applied Physics 138 (23) (2025)
+            Journal of Applied Physics 138 (23) (2025)<br>
+            <a class="read-btn" href="https://pubs.aip.org/aip/jap/article/138/23/235902/3374825/Equation-of-state-of-the-rutile-and-CaC-l-2-type" target="_blank">Read Paper ↗</a>
         </div>
 
-        <div class="card">
-            Uncovering the limits of lithium cobalt oxide: challenges and innovations for high-voltage lithium-ion batteries<br>
+        <div class="pub-card">
+            <a href="https://books.rsc.org/books/edited-volume/2289/chapter-abstract/8465954/Uncovering-the-Limits-of-Lithium-Cobalt-Oxide?redirectedFrom=fulltext" target="_blank">
+            Uncovering the limits of lithium cobalt oxide: challenges and innovations for high-voltage lithium-ion batteries
+            </a><br><br>
             <b>VP Singh, SK Satyarthi, G Kumar, AK Singh, RK Sharma</b><br>
-            2025
+            Royal Society of Chemistry (2025)<br>
+            <a class="read-btn" href="https://books.rsc.org/books/edited-volume/2289/chapter-abstract/8465954/Uncovering-the-Limits-of-Lithium-Cobalt-Oxide?redirectedFrom=fulltext" target="_blank">Read Chapter ↗</a>
         </div>
 
-        <div class="card">
-            Equation of state and high-pressure phase transitions in Mg2GeO4 forsterite<br>
-            <b>RV Divya, G Kumar, RE Cohen, SJ Tracy, Y Meng, S Chariton, ...</b><br>
-            International Association for Structural Geology and Tectonics (IASGT) (2024)
-        </div>
-
-        <div class="card">
-            Phenomenon of Overblowing for Flute or Whistle<br>
+        <div class="pub-card">
+            <a href="http://eprints.iiserkol.ac.in/1865/" target="_blank">
+            Phenomenon of Overblowing for Flute or Whistle
+            </a><br><br>
             <b>G Kumar</b><br>
-            Indian Institute of Science Education and Research Kolkata (2021)
+            IISER Kolkata Thesis Repository (2021)<br>
+            <a class="read-btn" href="http://eprints.iiserkol.ac.in/1865/" target="_blank">Read Thesis ↗</a>
         </div>
 
     </div>
 
     <h2>Contact</h2>
     <div class="card">
-        <b>Email:</b> kumargulshan@iitgn.ac.in , +91 7479276582
+        <b>Email:</b> kumargulshan@iitgn.ac.in<br>
+        <b>Phone:</b> +91 7479276582
     </div>
 
 </div>
+
+<footer>
+    © 2026 Gulshan Kumar | Academic Homepage
+</footer>
 
 </body>
 </html>
